@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="./style/style todo.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital@0;1&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+
+    <title>Juan Mejía</title>
+     <link rel="icon" type="image/ico" img href="imagenes/favicon.ico">
+  </head>
+
+  <body>
+
+<div id="headervolador"><p><a href="index.html">JUAN<br>MEJÍA</a><p></div>
+     <div id="rastrerovolador"><a href="index.html">←</a></div>
+      <div id="rastrerovolador2"><p></p></div>
+
+
+<!-- Control buttons -->
+<div id="sort-options">
+  <button class="btn active" onclick="filterSelection('all')"> TODAS / <span style="color: grey;">ALL</span></button>
+  <button class="btn" onclick="filterSelection('pintura')"> PINTURA / <span style="color: grey;">PAINTING</span></button>
+  <button class="btn" onclick="filterSelection('instalacion')"> INSTALACIÓN / <span style="color: grey;">INSTALLATION</span></button>
+  <button class="btn" onclick="filterSelection('dibujo')"> DIBUJO / <span style="color: grey;">DRAWING</span></button>
+  <button class="btn" onclick="filterSelection('animales')"> ANIMALES / <span style="color: grey;">ANIMALS</span></button>
+  <button class="btn" onclick="filterSelection('publicaciones')"> PUBLICACIONES / <span style="color: grey;">PUBLICATIONS</span></button>
+  <button class="btn" onclick="filterSelection('curadurias')"> CURADURIAS / <span style="color: grey;">CURATORIAL</span></button>
+  <button class="btn" onclick="filterSelection('videos')"> VIDEOS / <span style="color: grey;">VIDEOS</span></button>
+  <button class="btn" onclick="filterSelection('jyw')"> JUAN Y WILSON</button>
+  <button class="btn" onclick="filterSelection('jyg')"> JUAN Y GIOVANNI</button>
+
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="containerproyectos">
+
+  <div class="filterItems instalacion">
+     <a href="2023 bajotecho.html"><img src="imagenes/2023 bajotecho/0.jpg" width="100%"><p class="nombre">Bajo techo<p class="año">2023</p></a>
+  </div>
+
+  <div class="filterItems instalacion">
+     <a href="2020 temporal.html"><img src="imagenes/2020 temporal/0.png" width="100%"><p class="nombre">Temporal<p class="año">2020</p></a>
+  </div>
+  <div class="filterItems instalacion">
+    <a href="2019 primeras preguntas.html"><img src="imagenes/2019 primeras preguntas/1.jpg" width="100%"><p class="nombre">Primeras preguntas<p class="año">2021</p></a>
+  </div>
+  <div class="filterItems instalacion animales">
+    <a href="2018 M.A.M.U.T.html"><img src="imagenes/2018 MAMUT/1.jpg" width="100%"><p class="nombre">M.A.M.U.T<p class="año">2018</p></a>
+  </div>
+    <div class="filterItems instalacion">
+     <a href="2016 geografias.html"><img src="imagenes/2016 geografias/4.jpg" width="100%"><p class="nombre">Geografías<p class="año">2016</p></a>
+  </div>
+   <div class="filterItems instalacion pintura dibujo">
+     <a href="2015 hablaba.html"><img src="imagenes/2015 hablaba/0.png" width="100%"><p class="nombre">Hablaba con las salamandras, las oropéndolas y los ornitorrincos<p class="año">2015</p></a>
+  </div>
+  <div class="filterItems instalacion">
+     <a href="2015 Hacia un lugar comun.html"><img src="imagenes/2015 hacia un lugar comun/8.jpg" width="100%"><p class="nombre">Hacia un lugar común<p class="año">2015</p></a>
+  </div>
+  <div class="filterItems pintura">
+     <a href="2014 refurbished.html"><img src="imagenes/2014 refurbished/0.png" width="100%"><p class="nombre">Refurbished<p class="año">2014</p></a>
+  </div>
+   <div class="filterItems pintura">
+     <a href="2014 furtiva lagrima.html"><img src="imagenes/2014 furtiva lagrima/0.png" width="100%"><p class="nombre">Furtiva lágrima<p class="año">2014</p></a>
+  </div>
+   <div class="filterItems instalacion dibujo">
+    <a href="2009 happy days.html"><img src="imagenes/2009 happy days/0.png" width="100%"><p class="nombre">Happy days<p class="año">2009</p></a>
+    </div>
+
+  <div class="filterItems instalacion">
+    <a href="2009 la danza del diablo.html"><img src="imagenes/2009 la danza del diablo/0.jpg" width="100%"><p class="nombre">La danza del diablo<p class="año">2009</p></a>
+    </div>
+
+    <div class="filterItems pintura jyg">
+    <a href="2007 monte de piedad.html"><img src="imagenes/2007 monte de piedad/1.jpg" width="100%"><p class="nombre">Monte de piedad<p class="año">2007</p></a>
+  </div>
+
+    <div class="filterItems dibujo">
+    <a href="2006 mayorazgo.html"><img src="imagenes/2006 mayorazgo/0.jpg" width="100%"><p class="nombre">Mayorazgo<p class="año">2006-</p></a>
+  </div>
+
+    <div class="filterItems dibujo">
+    <a href="2005 historia natural II.html"><img src="imagenes/2005 historia natural II/1.jpg" width="100%"><p class="nombre">Historia natural II<p class="año">2005</p></a>
+  </div>
+
+      <div class="filterItems dibujo">
+    <a href="2005 ejercicios solipsistas.html"><img src="imagenes/2005 ejercicios solipsistas/1.png" width="100%"><p class="nombre">Ejercicios solipsistas<p class="año">2005</p></a>
+  </div>
+
+     <div class="filterItems instalacion dibujo">
+    <a href="2004 documentos y bodegones.html"><img src="imagenes/2004 documentos y bodegones/0.jpg" width="100%"><p class="nombre">Documentos y bodegones<p class="año">2004</p></a>
+  </div>
+
+     <div class="filterItems jyg">
+    <a href="2004 yo y tu.html"><img src="imagenes/2004 yo y tu/0.png" width="100%"><p class="nombre">Yo y tú<p class="año">2004</p></a>
+  </div>
+
+     <div class="filterItems dibujo">
+    <a href="2004 charlottesville.html"><img src="imagenes/2004 charlottesville/0.png" width="100%"><p class="nombre">Charlottesville<p class="año">2004</p></a>
+  </div>
+
+     <div class="filterItems dibujo animales">
+    <a href="2003 historia natural I.html"><img src="imagenes/2003 historia natural I/1.jpg" width="100%"><p class="nombre">Historia natural I<p class="año">2003</p></a>
+  </div>
+
+  <div class="filterItems instalacion dibujo">
+    <a href="2002 la obra maestra desconocida.html"><img src="imagenes/2002 la obra maestra desconocida/0.jpg" width="100%"><p class="nombre">Sin título (La obra maestra desconocida)<p class="año">2002</p></a>
+  </div>
+
+
+   <div class="filterItems instalacion">
+    <a href="2002 erase una vez un pedazo de madera.html"><img src="imagenes/2002 erase una vez un pedazo de madera/0.jpg" width="100%"><p class="nombre">Érase una vez un pedazo de madera<p class="año">2002-2004</p></a>
+  </div>
+
+  <div class="filterItems instalacion">
+    <a href="2001 la educacion sentimental.html"><img src="imagenes/2001 la educacion sentimental/1.jpg" width="100%"><p class="nombre">La educación sentimental<p class="año">2001</p></a>
+  </div>
+
+  <div class="filterItems jyg">
+    <a href="2000 eufemismo.html"><img src="imagenes/2000 eufemismo/0.png" width="100%"><p class="nombre">Eufemismo<p class="año">2000</p></a>
+  </div>
+
+  <div class="filterItems pintura animales">
+    <a href="1999 sin titulo.html"><img src="imagenes/1999 sin titulo/0.png" width="100%"><p class="nombre">Sin título<p class="año">1999</p></a>
+  </div>
+
+  <div class="filterItems pintura animales">
+    <a href="1999 sin titulo oso.html"><img src="imagenes/1999 sin titulo oso/0.png" width="100%"><p class="nombre">Sin título<p class="año">1999</p></a>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  
+  let sortOptions = document.getElementById('sort-options')
+let btns = sortOptions.getElementsByClassName('btn')
+
+function filterSelection(str) {
+  let items = document.getElementsByClassName('filterItems')
+  
+  if(str == "all"){ str = "" }
+  
+  Array.from(items).forEach(item => {
+    removeClass(item, 'show')
+    if(item.className.indexOf(str) > -1){
+      addClass(item, 'show')
+      console.log("working")
+    }
+  })
+}
+
+function addClass(element, name){
+    let itemClass, itemName
+
+    itemClass = element.className.split(' ')
+    itemName = name.split(' ')
+
+    for(let i = 0; i < itemName.length; i++){
+      if(itemClass.indexOf(itemName[i]) == -1){
+        element.className += " " + itemName[i]
+      }
+    }
+}
+
+function removeClass(element, name){
+  let itemClass, itemName;
+  
+  itemClass = element.className.split(' ')
+  itemName = name.split(' ')
+  
+ for (i = 0; i < itemName.length; i++) {
+    while (itemClass.indexOf(itemName[i]) > -1) {
+      itemClass.splice(itemClass.indexOf(itemName[i]), 1);
+    }
+  }
+  element.className = itemClass.join(" ")
+}
+
+Array.from(btns).forEach((btn) => {
+  btn.addEventListener('click', () => {
+    let current = document.getElementsByClassName('active')
+    current[0].className = current[0].className.replace(' active', '')
+    this.className += ' active';
+  })
+})
+
+filterSelection("all")
+
+</script>
+
+  </body>
+</html>
