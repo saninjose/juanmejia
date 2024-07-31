@@ -1,0 +1,638 @@
+/* Estilos globales que cobijan todas las secciones*/
+
+body{
+  max-width: 100vw;
+  font-size: 10pt;
+  overflow: auto;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: IBM Plex Mono, sans-serif;
+  font-style: normal;
+background-color: whitesmoke;
+}
+
+
+a{text-decoration: underline;
+color: inherit;}
+
+a:hover{
+  opacity: 50%;}
+
+.nombre{
+font-size: 10pt;
+width: 100%;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.año{
+  margin-top: 0;
+font-size: 8pt;
+width: 100%;
+opacity: 80%;
+color: slategray;
+text-decoration: none;
+text-align: left;}
+
+#rastrerovolador{
+text-align: left;
+font-weight: lighter;
+font-size: 2.5em;
+margin-left: 2.5%;
+color: red;
+width: %;
+position: fixed;
+margin-top: -5px;
+z-index: 98;
+}
+
+#headervolador{
+  color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+  width: 7%;
+  font-size: 10pt;
+  margin-left: 90%;
+  margin-top: -5px;
+  position: fixed;
+  z-index: 99;
+  background-color: transparent;
+}
+
+
+#rastrerovolador2{color: midnightblue;
+text-align: left;
+font-weight: bold;
+width: 90%;
+margin-left: 2.5%;
+margin-top: -5px;
+position: fixed;
+margin-bottom: 25px;
+top: 95%;
+z-index: 98;
+background-color: transparent;
+}
+
+.documentosproyectos{font-style: italic;
+color: blue;}
+
+/* Fin estilos globales que cobijan todas las secciones*/
+
+
+/* Estilo para el índice global*/
+
+.letrerosindice {color:black;
+  text-decoration: underline;
+font-weight: bold;}
+
+.letrerosindice:hover {opacity: 50%;
+cursor: crosshair;}
+
+.letrerossubindicepropios {color:black;
+  padding-left: 3%;
+  width: 45%;
+  float: left;}
+
+.letrerossubindiceotros {color:black;
+  padding-left: 3%;
+  width: 45%;
+   float: right;}
+
+.fichatectextos{padding-left: 3%;}
+
+button {padding: 0;
+  font-size: 10pt;
+  font-family: IBM Plex Mono;
+border: none;
+background: none;
+text-decoration: none;
+font-weight: bold;
+margin: 0%;
+z-index: 1;}
+
+button:hover {
+      color: hotpink;
+      transition: 0.1s;
+  }
+
+  button:focus {
+      color: yellow;
+      transition: 0.1s;
+  }
+
+
+
+
+.bannerARTES {
+  position: absolute;
+  width: 30%;
+  display: none;
+  top: 300px;
+  color: pink;
+  z-index: 99;}
+
+  .bannerTEXTOS {
+  position: absolute;
+  width: 30%;
+  display: none;
+  top: 300px;
+  color: black;
+  text-align: left;
+  z-index: 99;}
+
+   .bannerBIO {
+  position: absolute;
+  width: 30%;
+  display: none;
+  top: 300px;
+  color: black;
+  text-align: left;
+  z-index: 99;
+max-height: 300px;}
+
+   .bannerCOLECCION {
+  position: absolute;
+  width: 30%;
+  display: none;
+  top: 300px;
+  z-index: 99;}
+
+
+.open-banner {
+  display: contents;}
+
+.open-banner2 {
+  display: contents;}
+
+   .container{
+  display:grid;
+  height: 80vh;
+  grid-template-columns:.5fr .51fr 1fr .5fr .5fr;
+  grid-template-rows:  .5fr .5fr .5fr .5fr .5fr;
+  grid-template-areas:
+                       "hueco hueco hueco hueco hueco"
+                       "lksdjaskd vljndflkg columna1 kldfsjkd dklfksdjfk"
+                       "las añlsklñas columna2 nada oasdoa"
+                       "aksjdlak kasdlka columna3 kalsjd klasda"
+                       "askjda lksjdlka columna4 klasa lkasjdlka";}
+
+
+
+
+#tituloproy{
+  background-color: green;
+  position: fixed;
+  grid-area: tituloproy;
+}
+
+
+#columna1{
+  padding: 1%;
+ background-color: palegreen;
+  grid-area: columna1;
+  z-index: 1;
+}
+
+#columna2{
+  padding: 1%;
+  background-color: aliceblue;
+  grid-area: columna2;
+  z-index: 1;
+}
+
+#columna3{
+  padding: 1%;
+  background-color: pink;
+  grid-area: columna3;
+}
+
+#columna4{
+  padding: 1%;
+  background-color: lightyellow;
+  grid-area: columna4;
+}
+
+/* Fin estilo índice global*/
+
+/* Estilo para índice artes*/
+
+#sort-options{
+  font-family: IBM Plex Mono;
+  width: 80%;
+  position: relative;
+  margin-top: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  z-index: 95;
+  background-color: transparent;
+}
+
+.btn {
+  border: none;
+  padding: 12px 16px;
+  background-color: transparent;
+    font-family: IBM Plex Mono, sans-serif;
+  cursor: pointer;
+  color: black;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  transition: 350ms;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: transparent;
+}
+
+.btn:focus{
+  outline: none;
+  background-color: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.btn:active {
+  background-color: trasnparent;
+  color: pink;
+}
+
+@keyframes showing{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+
+.filterItems {
+  background-color: transparent;
+  border-radius: none;
+  display: none;
+  overflow: hidden;
+  height: 110%;
+  margin-bottom: 3%;
+}
+
+.filterItems > img{
+  width: 100%;
+}
+
+.show {
+  display: block;
+  animation: 350ms showing linear;
+}
+
+.containerproyectos {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 1% 1% 1% 1%;
+  padding: 1%;
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+}
+
+/* Fin estilo para índice artes*/
+
+/* Estilo para proyectos artes*/
+
+#rastrerovoladorproyecto{
+text-align: left;
+font-weight: lighter;
+font-size: 2.5em;
+margin-left: 45%;
+color: red;
+position: fixed;
+margin-top: -5px;
+z-index: 98;
+background-color: transparent;
+}
+
+
+.containerproyecto{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " fichatecesp fichatecesp fichatecesp fichateceng fichateceng fichateceng"
+                       " descripciónesp descripciónesp descripciónesp descripcióneng descripcióneng descripcióneng"
+                       "kslhdalk espaciofotos espaciofotos espaciofotos espaciofotos lkfsdlkjf";
+
+
+  grid-gap: .5rem;
+  MARGIN-LEFT: 2%;
+    MARGIN-RIGHT: 2%;
+
+}
+
+#tituloproy{
+  background-color: transparent;
+  position: fixed;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 10pt;
+  margin-left: 2%;}
+
+#fichatecesp{
+  font-size: 10pt;
+  background-color: transparent;
+  text-align: left;
+  margin-top: 10%;
+  grid-area: fichatecesp;
+}
+#fichateceng{
+  font-size: 10pt;
+  background-color: transparent;
+  text-align: left;
+  margin-top: 10%;
+  color: grey;
+  grid-area: fichateceng;
+}
+
+#descripciónesp{
+  width: 75%;
+  padding-left: 30px;
+  text-align: left;
+  background-color: transparent;
+  grid-area: descripciónesp;
+color: midnightblue;}
+
+#descripcióneng{
+  width: 75%;
+  padding-left: 30px;
+  text-align: left;
+  background-color: transparent;
+  color: grey;
+  grid-area: descripcióneng;}
+
+#espaciofotos{
+  background-color: transparent;
+  grid-area: espaciofotos;
+}
+  #contenidoadicional{
+  background-color: transparent;
+  grid-area: contenidoadicional;
+}
+
+#piedefoto{
+  color: inherit;
+  max-width: 90%;
+  padding-top: 0%;
+  padding-left: 3%;
+  margin-bottom: 3%;
+  font-size: 10pt;}
+
+/* Fin estilo proyectos artes*/
+
+/* Estilo para el foto álbum va en un archivo aparte*/
+
+
+
+/* FIN Estilo para el foto álbum*/
+
+
+/* break point 1550*/
+
+@media (max-width: 1500px){
+
+/* Estilo para proyectos artes*/
+
+  
+  #fichatecesp{
+  max-width: 90%;
+  margin-top: 15%;}
+
+  #fichateceng{
+    max-width: 90%;
+    margin-top: 15%;}
+
+  .containerproyecto{
+    display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " fichatecesp fichatecesp fichateceng fichateceng"
+                       " descripciónesp descripciónesp descripcióneng descripcióneng"
+                       "espaciofotos espaciofotos espaciofotos espaciofotos";
+
+  grid-gap: .5rem;}
+
+
+
+/* Fin estilo para proyectos artes*/
+
+/* break point 900*/
+
+@media (max-width: 900px){
+
+/* Estilos globales que cobijan todas las secciones*/
+
+#headervolador{color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+width: 15%;
+  margin-left: 80%;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  background-color: transparent;
+}
+
+#rastrerovolador{
+text-align: center;
+  width: 10%;
+  margin-left: 87%;
+  position: fixed;
+  top: 8%;
+  padding-right: 5%;
+  z-index: 99;
+}
+
+#rastrerovolador2{
+text-align: right;
+  font-weight: bold;
+  width: 97%;
+  position: fixed;
+  top: 95%;
+  z-index: 1;
+}
+
+/* Fin estilos globales que cobijan todas las secciones*/
+
+
+/* Estilo para el índice global*/
+
+.content0 {
+    width: 326px;
+    height: 430px;}
+
+
+  #headervolador{color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+width: 15%;
+  margin-left: 80%;
+  position: fixed;
+  top: 2%;
+  z-index: 99;
+  background-color: transparent;
+}
+
+#rastrerovolador{
+text-align: center;
+  width: 10%;
+  margin-left: 87%;
+  position: fixed;
+  top: 8%;
+  padding-right: 5%;
+  z-index: 99;
+}
+
+#rastrerovolador2{
+text-align: right;
+  font-weight: bold;
+  width: 97%;
+  position: fixed;
+  top: 95%;
+  z-index: 1;
+}
+
+ .container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns:1fr;
+  grid-template-rows:  .5fr .5fr .5fr .5fr;
+  grid-template-areas: "columna1"
+                       "columna2"
+                       "columna3"
+                       "columna4";
+
+}
+
+/* Fin estilo índice global*/
+
+/* Estilo para índice artes*/
+
+.filterItems {
+  position: relative;
+  background-color: transparent;
+  align-content: center;
+  display: none;
+  overflow: hidden;
+  height: 150%;
+  width: 100%;
+}
+
+.filterItems > img{
+  width: 100%;
+}
+
+.show {
+  display: block;
+  animation: 350ms showing linear;
+}
+
+
+.btn {
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 1% 3%;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  font-size: 0.8rem;
+  border-radius: none;
+  transition: 350ms;
+}
+
+#sort-options{
+  font-family: IBM Plex Mono;
+  position: relative;
+  margin-top: 15px;
+   margin-bottom: 15px;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  z-index: 99;
+}
+
+.containerproyectos {
+    position: relative;
+    width: 85vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: -7%;
+  padding: 0%;
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  overflow: none;
+}
+
+/* Fin estilo para índice artes*/
+
+/* Estilo para proyectos artes*/
+
+.containerproyecto{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                      "fichatecesp fichateceng"
+                      "espaciofotos espaciofotos"
+                      "descripciónesp descripciónesp"
+                      "descripcióneng descripcióneng";
+  }
+
+  #rastrerovoladorproyecto{
+text-align: center;
+  width: 10%;
+  margin-left: 87%;
+  position: fixed;
+  top: 8%;
+  padding-right: 5%;
+  z-index: 99;
+}
+
+#fichatecesp{
+  max-width: 90%;
+  margin-top: 30%;
+  margin-bottom: 15px;
+  }
+  #fichateceng{
+    max-width: 90%;
+    margin-top: 30%;
+    margin-bottom: 15px;
+  }
+
+  #descripciónesp{
+    padding: 0;
+  width: 90%;}
+  
+
+#descripcióneng{
+  padding: 0;
+  width: 90%;}
+ 
+
+
+#espaciofotos{
+  background-color: transparent;
+  grid-area: espaciofotos;
+  margin-right: 0px;
+  margin-top: -7%;
+  height: 100%;}
+
+}
+
+}
+/* Fin estilo para proyectos artes*/
+
+/* Estilo para el foto álbum va en un archivo aparte*/
+
+
+/* Fin estilo para el foto álbum*/
+
+

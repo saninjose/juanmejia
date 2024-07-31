@@ -1,0 +1,287 @@
+
+
+#logojuan{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  float: left;
+  margin: 1%;
+  text-align: left;
+  background-color: transparent;
+  height: 200px;
+  max-width: 25%;
+  font-size: 12pt;
+  margin-top: 9%;
+  z-index: 0;
+}
+
+#imglogojuan{margin: auto;
+    display: block;}
+
+#textointro{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  float: left;
+  margin: 1%;
+  text-align: left;
+  background-color: transparent;
+  height: 200px;
+  max-width: 30%;
+  font-size: 12pt;
+  margin-top: 9%;
+  z-index: 0;
+}
+
+#textointroenglish{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: grey;
+  float: left;
+  margin: 1%;
+  text-align: left;
+  background-color: transparent;
+  height: 200px;
+  max-width: 35%;
+  font-size: 12pt;
+  margin-top: 9%;
+  z-index: 0;
+}
+
+body{
+  font-family: IBM Plex Mono, sans-serif;
+  background-repeat: no-repeat;
+    background-color: whitesmoke;
+    overscroll-behavior: none;
+touch-action: pan-down;
+}
+
+
+a{color: blue;
+text-decoration: underline;
+}
+
+a:hover {color: lightblue;
+text-decoration: underline;}
+
+#contenido2 a {
+-webkit-text-fill-color: initial;
+text-decoration: underline;
+text-decoration-color: grey;}
+
+#contenido2 a:hover {color: #8B6339;
+  text-decoration-color: #8B6339;
+}
+
+
+button {padding: 0;
+border: none;
+margin-top: 5%;
+}
+
+
+.container0{
+  position:absolute;
+  top:0%;
+  right:0%;
+  bottom:0%;
+  left:0%;
+  display:grid;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "contenido0 contenido0 contenido0 contenido0 contenido0 contenido0"
+                         "contenido1 contenido1 contenido2 contenido2 contenido3 contenido3"
+                         "contenido4 contenido4 contenido4 contenido4 contenido4 contenido4";
+                         
+  grid-gap: .5rem;}
+
+
+
+
+  #contenido0{
+  background-color: mediumpurple;
+  grid-area: contenido0;}
+  #contenido1{
+  background-color: red;
+  grid-area: contenido1;}
+  #contenido2{
+    background-color: orange;
+  grid-area: contenido2;}
+  #contenido3{
+  background-color: blueviolet;
+  grid-area: contenido3;}
+  #contenido4{
+    text-align: center;
+  background-color: pink;
+  grid-area: contenido4;}
+  
+
+@media (max-width: 1200px){
+
+}
+
+  .container0{
+  position:absolute;
+  top:0%;
+  right:0%;
+  bottom:0%;
+  left:0%;
+  display:grid;
+  width: 100vw;
+  height: 100vw;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+
+    grid-template-columns: .1fr .5fr 1fr 1fr .5fr .1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "contenido0 contenido0 contenido0 contenido0 contenido0 contenido0"
+                         "contenido1 contenido1 contenido2 contenido2 contenido3 contenido3"
+                         "contenido4 contenido4 contenido4 contenido4 contenido4 contenido4";
+                         
+  grid-gap: .5rem;}
+
+
+@media (max-width: 800px){
+
+  #logojuan{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  float: left;
+  text-align: center;
+  background-color: transparent;
+  height: 50px;
+  max-width: 20%;
+  font-size: 12pt;
+  margin-top: 9%;
+
+  z-index: 0;
+}
+
+#textointro{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  float: left;
+  margin-left: 0%;
+  text-align: left;
+  background-color: transparent;
+  height: 200px;
+  max-width: 30%;
+  margin-bottom: 05;
+  font-size: 12pt;
+  z-index: 0;
+}
+
+#textointroenglish{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: grey;
+  float: left;
+  margin-left: 3%;
+  text-align: left;
+  background-color: transparent;
+  height: 200px;
+  max-width: 35%;
+  font-size: 12pt;
+  z-index: 0;
+}
+
+.container0{
+  position: absolute;
+  display:grid;
+  width: 100vw;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+  margin: auto;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "contenido0 contenido0 contenido0 contenido0 contenido0 contenido0"
+                         "contenido1 contenido1 contenido1 contenido1 contenido1 contenido1"
+                         "contenido2 contenido2 contenido2 contenido2 contenido2 contenido2"
+                         "contenido3 contenido3 contenido3 contenido3 contenido3 contenido3"
+                         "contenido4 contenido4 contenido4 contenido4 contenido4 contenido4";
+                         
+  grid-gap: .5rem;}
+
+  body{cursor: pointer;}
+
+ 
+
+html {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+@media  (max-width: 600px){
+
+#logojuan{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  clear: left;
+  text-align: center;
+  background-color: transparent;
+  max-height: 100px;
+  max-width: 100%;
+  font-size: 12pt;
+  margin-top: 9%;
+  margin-left: 9%;
+  z-index: 0;
+}
+
+#textointro{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: black;
+  clear: left;
+   margin-left: 9%;
+   margin-right: 9%;
+  text-align: left;
+  background-color: transparent;
+  max-height: 25%;
+  max-width: 100%;
+  font-size: 12pt;
+  z-index: 0;
+}
+
+#textointroenglish{ 
+  font-family:  IBM Plex mono,sans-serif;
+  color: grey;
+  clear: left;
+   margin-left: 9%;
+   margin-right: 9%;
+  text-align: left;
+  background-color: transparent;
+  max-height: 25%;
+  max-width: 100%;
+  font-size: 12pt;
+  z-index: 0;
+}
+
+
+
+ .container0{
+  position: absolute;
+  display:grid;
+  width: 100vw;
+  margin: auto;
+  width: 99%;
+  height: 99%;
+  margin: auto;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "contenido0 contenido0 contenido0 contenido0 contenido0 contenido0"
+                         "contenido1 contenido1 contenido1 contenido1 contenido1 contenido1"
+                         "contenido2 contenido2 contenido2 contenido2 contenido2 contenido2"
+                         "contenido3 contenido3 contenido3 contenido3 contenido3 contenido3"
+                         "contenido4 contenido4 contenido4 contenido4 contenido4 contenido4";
+                         
+  grid-gap: .5rem;}
+
+
+
+
+  

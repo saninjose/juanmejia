@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="./style/style todo.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital@0;1&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+
+     <title>Juan Mejía</title>
+  <link rel="icon" type="image/ico" img href="imagenes/favicon.ico">
+  </head>
+
+  <body style="background-color: lightblue;">
+  <!--comienzo header--->
+      <div id="headervolador"><p><a href="index.html">JUAN<br>MEJÍA</a><p></div>
+     <div id="rastrerovolador"><a href="indice global.html">←</a></div>
+      <div id="rastrerovolador2"><p></p></div>
+
+
+  <!--comienzo contenido principal--->
+  <div class="container">
+
+   <div id="columna1">   
+ <a href="categs.html"><p class="letrerosindice">ARTES / <span style="color: grey;">ARTS</span></p></a>
+  </div>
+
+   <div id="columna2">
+      <button class="button2"><p class="letrerosindice">TEXTOS / <span style="color: grey;">TEXTS</span></p></button>
+  <div class="bannerTEXTOS">
+    <div>
+    <div class="letrerossubindicepropios"><b>PROPIOS / <span style="color: grey;">OWN</span></b>
+    <a href="textos/1erperfortext.pdf" target="_blank"><p class="fichatectextos">Perperfortext<br>2006</p></a>
+    <a href="textos/dibujarpelo.pdf" target="_blank"><p class="fichatectextos">Dibujar pelo<br>2006</p></a>
+    </div>
+
+     <div class="letrerossubindiceotros"><b>OTROS / <span style="color: grey;">OTHERS</span></b>
+    <a href="textos/Juan Mejia, formacion, coleccionismo y autobiografia.pdf" target="_blank"><p class="fichatectextos">Juan Mejía, formación, coleccionismo y autobiografía</a><br>Ivonne Pini<br></p>
+    <a href="textos/Juan Mejia Educacion sentimental.pdf" target="_blank"><p class="fichatectextos">Juan Mejía. Educación sentimental</a><br>Emiliano Valdés</p>
+    </div>
+    </div>
+    
+
+
+    <br>
+  </div>
+   </div>
+
+   <div id="columna3">
+       <button class="button"><p class="letrerosindice">BIO /<span style="color: grey;"> BIO</span></p></button>
+  <div class="bannerBIO">
+
+
+    <p><a href="fotoalbum.html"><p>Foto álbum</p></a>
+
+    <a href="documentos/C.V JM.pdf" target="_blank"><p>C.V</p></a>
+    
+    <!--<img src="imagenes/0a.jpg" width="100%">-->
+    <p>Juan Mejía (Charlottesville, VA, E.U., 1966) es caleño y estudió artes plásticas en la Universidad de los Andes, donde se graduó en 1993. En el 2004 obtuvo el título de maestría en Historia y Teoría del Arte y la Arquitectura de la Universidad Nacional de Colombia. Vive y trabaja en Bogotá, donde además de dedicarse a la producción de su obra artística, es profesor asociado del Departamento de Arte de la Universidad de los Andes. Expone individual y colectivamente desde 1995 en espacios y eventos nacionales de arte contemporáneo, y en ocasiones también internacionalmente. Ha recibido varias distinciones como el primer premio del VII Salón regional de artistas (1995), el premio Solidarte (1997) y el premio Luis Caballero (2015). <br><br>
+
+Su trabajo visual gira en torno a la creación de imágenes alegóricas y alusivas al proceso de formación artística y educación en general, con referencias permanentes a la infancia, la adolescencia, el ámbito escolar, y la autobiografía, materializadas en distintos medios como el dibujo, la instalación, las publicaciones y en algunos casos el performance. Sus trabajos se caracterizan también por cierta precariedad en los elementos que lo componen, y por mezclar fuentes de la llamada alta cultura y la cultura popular y los medios, la literatura, el arte, la música y el cine. A través de estas alusiones y referencias, se evidencia un deliberado e irónico elemento de incompletud, de “querer ser”, que conforma en buena medida la naturaleza de su trabajo.</p>
+
+
+    <br>
+  </div>
+   </div>
+
+
+   <div id="columna4">
+     <button class="button3"><p class="letrerosindice">COLECCIÓN / <span style="color: grey;">COLLECTION</span></p></button>
+     <div class="bannerCOLECCION">
+        <p>Información sobre la colección</p>
+     </div>
+
+   </div>
+   
+ </div>
+
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", () => {
+//   You can get different selectors (class, id, tags...)
+    const button = document.querySelector('.button2');
+    const banner = document.querySelector('.bannerTEXTOS');
+
+
+    // Global open/close functions
+    const open = () => {
+        button.classList.add('open-button');
+        banner.classList.add('open-banner');
+    }
+
+    const close = () => {
+        button.classList.remove('open-button');
+        banner.classList.remove('open-banner');
+    }
+
+    // Check click on button
+    button.addEventListener('mousedown',  () => {
+ 
+        if (!button.classList.contains('open-button')) {
+            open()
+        }
+        else {
+            close()
+        }
+
+    });
+
+    // Close when user click outside
+    document.body.addEventListener('mousedown', (e) => {
+
+        let isClickInsideButton = button.contains(e.target);
+        let isClickInsideBanner = banner.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close ();
+        }
+    });
+
+});</script>
+
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", () => {
+//   You can get different selectors (class, id, tags...)
+    const button = document.querySelector('.button');
+    const banner = document.querySelector('.bannerBIO');
+
+
+    // Global open/close functions
+    const open = () => {
+        button.classList.add('open-button');
+        banner.classList.add('open-banner');
+    }
+
+    const close = () => {
+        button.classList.remove('open-button');
+        banner.classList.remove('open-banner');
+    }
+
+    // Check click on button
+    button.addEventListener('mousedown',  () => {
+ 
+        if (!button.classList.contains('open-button')) {
+            open()
+        }
+        else {
+            close()
+        }
+
+    });
+
+    // Close when user click outside
+    document.body.addEventListener('mousedown', (e) => {
+
+        let isClickInsideButton = button.contains(e.target);
+        let isClickInsideBanner = banner.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close ();
+        }
+    });
+
+});</script>
+
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", () => {
+//   You can get different selectors (class, id, tags...)
+    const button = document.querySelector('.button3');
+    const banner = document.querySelector('.bannerCOLECCION');
+
+
+    // Global open/close functions
+    const open = () => {
+        button.classList.add('open-button');
+        banner.classList.add('open-banner');
+    }
+
+    const close = () => {
+        button.classList.remove('open-button');
+        banner.classList.remove('open-banner');
+    }
+
+    // Check click on button
+    button.addEventListener('mousedown',  () => {
+ 
+        if (!button.classList.contains('open-button')) {
+            open()
+        }
+        else {
+            close()
+        }
+
+    });
+
+    // Close when user click outside
+    document.body.addEventListener('mousedown', (e) => {
+
+        let isClickInsideButton = button.contains(e.target);
+        let isClickInsideBanner = banner.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close ();
+        }
+    });
+
+});</script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
